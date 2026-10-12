@@ -23,8 +23,8 @@ jobs:
 
     runs-on: windows-latest  # Recommended runner for compiling Windows/Cross-platform UiPath projects
     #Before start build the code we need to get approval from the required reviewers which is configured in Production environment
-   # environment:
-    #  name: production
+    environment:
+      name: production
     env:
       # These use secrets configured in your GitHub Repository settings
       UIPATH_URL: "https://cloud.uipath.com/mnscorp/WPT_Prod/orchestrator_" # ${{ secrets.UIPATH_ORCHESTRATOR_URL }}          # e.g., https://uipath.com
